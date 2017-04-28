@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Imagelab</string>
+    <string name="button_pick_image">Pick image</string>
+    <string name="button_cancel_edit">Cancel</string>
+    <string name="img_content_desc">An image</string>
+    <string name="text_view_camera">Take a picture</string>
+    <string name="text_view_gallery">Choose a picture</string>
+    <string name="request_permission">Imagelab needs your permission to save photos to storage.</string>
+</resources>

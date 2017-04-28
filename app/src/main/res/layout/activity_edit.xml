@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hacksoft.io.imagelab.EditActivity">
+
+    <ImageView
+        android:id="@+id/image_view_source"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_flipper" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <include layout="@layout/toolbox" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_filters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/holder_loading" />
+
+        <include layout="@layout/holder_confirmation" />
+        
+    </ViewFlipper>
+
+</RelativeLayout>

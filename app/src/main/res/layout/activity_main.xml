@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hacksoft.io.imagelab.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:onClick="onSelectCamera"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/icon_camera"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/img_content_desc" />
+        <TextView
+            android:id="@+id/text_view_camera"
+            android:text="@string/text_view_camera"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/icon_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:onClick="onSelectGallery"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/icon_gallery"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/img_content_desc" />
+        <TextView
+            android:id="@+id/text_view_gallery"
+            android:text="@string/text_view_gallery"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/icon_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<Button-->
+        <!--android:id="@+id/button_transform"-->
+        <!--android:drawableStart="@android:drawable/ic_menu_crop"-->
+        <!--android:onClick="onSelectTransform"-->
+        <!--android:text="Transform"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_columnWeight="1" />-->
+
+    <Button
+        android:id="@+id/button_filters"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:onClick="onSelectFilters"
+        android:text="Filters"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:drawableStart="@android:drawable/ic_menu_save"
+        android:onClick="onSave"
+        android:text="Save"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <!--<Button-->
+        <!--android:id="@+id/blah"-->
+        <!--android:drawableStart="@android:drawable/ic_menu_upload"-->
+        <!--android:onClick="onUpload"-->
+        <!--android:text="Imgur"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_rowWeight="1"-->
+        <!--android:layout_columnWeight="1" />-->
+
+</GridLayout>

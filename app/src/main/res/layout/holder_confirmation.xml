@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/button_save"
+        android:drawableStart="@android:drawable/ic_menu_add"
+        android:onClick="onApply"
+        android:text="Apply"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/button_cancel"
+        android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCancel"
+        android:text="Cancel"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
